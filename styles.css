@@ -1,0 +1,177 @@
+/*body{
+    margin: 0px;
+    font-size: 20px;
+}
+
+.text {
+    color: F37021;
+    font-size: 35px;
+    font-weight: bolder;
+    background-color: aquamarine;
+    margin: 20px;
+    padding: 20px;
+    height: 30px;
+    width: 100%;
+    position: fixed;
+    top: 20px;
+    left: 20px;
+}
+
+.rel{
+    width: 100px;
+    height: 100px;
+    background-color: blue;
+    position: relative;
+    margin: 20px;
+    margin: 20px;
+    border-top: solid green 5px;
+    border-radius: 10px;
+}
+
+.abs{
+
+    width: 50px;
+    height: 50px;
+    background-color: blueviolet;
+    position: absolute;
+    margin: 20px;
+}
+*/
+
+/*text{
+
+}
+
+.rel{
+    width: 200px;
+    height: 200px;
+    background-color: rgb(250, 202, 202);
+    position: relative;
+    border-radius: 5px;
+    border: solid salmon 2px;
+}
+
+.abs1 {
+    width: 100px;
+    height: 100px;
+    background-color: rgb(252, 160, 160);
+    position: absolute;
+    border-radius: 5px;
+    border: solid rgb(252, 232, 230) 2px;
+    margin-top: 50px;
+    margin-left: 50px;
+}
+
+.abs2 {
+    width: 50px;
+    height: 50px;
+    background-color: rgb(248, 134, 134);
+    position: absolute;
+    border-radius: 5px;
+    top: 25px;
+    right: 25px;
+}*/
+/*Comenario*/
+
+:root{
+    --main-bg-color: blue;
+    --secondary-bg-color: red;
+    --main-bg-border: 4px;
+}
+.box{
+    width: 100px;
+    aspect-ratio: 1;
+    background-color: var(--main-bg-color);
+    transition: 300ms;
+}
+
+.box:hover{
+    width: 50px;
+    background-color: blue;
+    border-radius: 50%;
+
+}
+
+.red{
+    color: aquamarine;
+    font-size: 80px;
+
+}
+
+.item1{
+    grid-area: header;
+    background-color: beige;
+}
+.item2{
+    grid-area: menu;
+    background-color: beige;
+}
+.item3{
+    grid-area: main;
+    background-color: beige;
+}
+.item4{
+    grid-area: footer;
+    background-color: beige;
+}
+
+.grid-container{
+    display: grid;
+    gap: 10px;
+    height: 100vh;
+    aspect-ratio: 19:9;
+    grid-template-areas:
+    'header header header header header header'
+    'menu main main main main main'
+    'menu footer footer footer footer footer'
+
+}
+
+.flex{
+    height: 100vh;
+    display: flexbox;
+    align-items: center;
+    justify-content: center;
+}
+
+.flex2{
+    height: 100vh;
+    display: flexbox;
+    align-items: flex-end;
+    justify-content: space-between;
+    flex-direction: column;
+}
+
+.cont{
+    background-color: aqua;
+    width: 100px;
+    aspect-ratio: 1;
+}
+
+.el1, .el2{
+    width: 50px;
+    aspect-ratio: 2;
+    background-color: blue;
+}
+
+.card{
+    width: 300px;
+    height: 500px;
+    background-color: rgb(246, 214, 214);
+    display: flex;
+    justify-content: space-between;
+
+}
+
+.img{
+    width: 30px;
+    aspect-ratio: 1;
+    background-color: black;
+    border-radius: 50%;
+}
+
+header{
+    display: flex;
+    align-items: center;
+    padding: 5px;
+}
